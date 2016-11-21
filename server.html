@@ -1,0 +1,836 @@
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/rygl.css" rel="stylesheet">
+<link rel="stylesheet" href="css/server.css"/>
+<link rel="stylesheet" href="css/tree.css"/>
+<link href="css/common.css" rel="stylesheet">
+
+<div style="height:53px;"></div>
+<div class="server_left">
+    <div class="server_title">服务台</div>
+    <div class="server_left_pub">
+        <div class="server_find" >
+            <h4>快速查询</h4>
+            <div class="server_find_pub">
+                今日数据
+            </div>
+            <div class="server_find_pub">
+                今日数据
+            </div>
+            <div class="server_find_pub">
+                今日数据
+            </div>
+        </div>
+    </div>
+    <div class="server_left_pub">
+        <div class="server_find server_option" >
+            <h4>筛选条件</h4>
+            <div class="server_form">
+                <div class="form-group">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon change_color">开始时间</span>
+                        <input type="text" class="form-control" style="width:60%">
+                        <a href="#" class="icon">
+                            <img src="image/rygl/alert_err.png" width=25px height=25px alt=""/>
+                            <img src="image/rygl/alert_menu.png" width=25px height=25px alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-sm">
+                        <span class="input-group-addon change_color">结束时间</span>
+                        <input type="text" class="form-control" style="width:60%">
+                        <a href="#" class="icon">
+                            <img src="image/rygl/alert_err.png" width=25px height=25px alt=""/>
+                            <img src="image/rygl/alert_menu.png" width=25px height=25px alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group arrow">
+                        <span class="input-group-addon change_color">测站类型</span>
+                        <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown" style="width:115%">
+                            <option><a href="#">Action</a></option>
+                            <option><a href="#">Another action</a></option>
+                            <option><a href="#">Something else here</a></option>
+                            <option><a href="#">Separated link</a></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">查询</a>
+        </div>
+    </div>
+    <div class="server_left_pub">
+        <div class="server_find server_req" >
+            <h4>请求统计</h4>
+            <ul>
+                <li><span>待处理 : </span><span class="server_req_num">0</span></li>
+                <li><span>处理中 : </span><span class="server_req_num" >1</span></li>
+                <li><span>待反馈 : </span><span class="server_req_num" >3</span></li>
+                <li><span>已完成 : </span><span class="server_req_num" >3</span></li>
+                <li><span>所有请求 :</span><span class="server_req_num" >4</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="server_right">
+    <div class="handler">
+        <div class="handler_look" data-toggle="modal" data-target="#myModal">
+            <i></i>
+            <span>查看</span>
+        </div>
+        <div class="handler_add" data-toggle="modal" data-target="#myModal3">
+            <i></i>
+            <span>添加</span>
+        </div>
+        <div class="handler_change" data-toggle="modal" data-target="#myModal1">
+            <i></i>
+            <span>编辑</span>
+        </div>
+        <div class="handler_remove" data-toggle="modal" data-target="#myModal2">
+            <i></i>
+            <span>删除</span>
+        </div>
+    </div>
+    <table class="table">
+        <tbody>
+        <tr>
+            <th class="tr_title" >
+                <input type="checkbox"/>
+            </th>
+            <th>请求状况</th>
+            <th>请求分类</th>
+            <th>请求来源</th>
+            <th>请求人</th>
+            <th>记录人</th>
+            <th>请求状态</th>
+            <th>详情信息</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>
+                2016-11-10 00:00 </br>
+                R201600000011
+            </td>
+            <td >-</td>
+            <td >电话</td>
+            <td >1000001（1） </br>
+                 黑龙江省水利厅
+             </td>
+            <td >奥特美克运维经理</td>
+            <td >处理中</td>
+            <td >指派</td>
+        </tr>
+        <tr class="aotab">
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td >
+                2016-11-10 00:00 </br>
+                R201600000011
+            </td>
+            <td >-</td>
+            <td >电话</td>
+            <td >1000001（1） </br>
+                黑龙江省水利厅
+            </td>
+            <td >奥特美克运维经理</td>
+            <td >处理中</td>
+            <td >指派</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td >
+                2016-11-10 00:00  </br>
+                R201600000011
+            </td>
+            <td >-</td>
+            <td >电话</td>
+            <td >1000001（1）  </br>
+                黑龙江省水利厅
+            </td>
+            <td >奥特美克运维经理</td>
+            <td >处理中</td>
+            <td >指派</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td >
+                2016-11-10 00:00  </br>
+                R201600000011
+            </td>
+            <td >-</td>
+            <td >电话</td>
+            <td >1000001（1）  </br>
+                黑龙江省水利厅
+            </td>
+            <td >奥特美克运维经理</td>
+            <td >处理中</td>
+            <td >指派</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="server_right_info">显示第1到第4条记录，共计4条记录</p>
+</div>
+
+<!--点击查看显示模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width:700px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>编辑-测站</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;</button>
+            </div>
+            <div class="model_title">
+                <div class="base_info" id="base_info">基本信息</div>
+                <div class="look_info" id="look_info">看护人员信息</div>
+            </div>
+            <div class="modal-body" id="base_info_box">
+                <div class="modal_left" style="padding-left: 42px;">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">测站编码</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">经度</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group arrow">
+                                <span class="input-group-addon change_color">测站类型</span>
+                                <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown" style="width:122%">
+                                    <option><a href="#">Action</a></option>
+                                    <option><a href="#">Another action</a></option>
+                                    <option><a href="#">Something else here</a></option>
+                                    <option><a href="#">Separated link</a></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group arrow">
+                                <span class="input-group-addon change_color">报讯等级</span>
+                                <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown" style="width:122%">
+                                    <option><a href="#">Action</a></option>
+                                    <option><a href="#">Another action</a></option>
+                                    <option><a href="#">Something else here</a></option>
+                                    <option><a href="#">Separated link</a></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在市</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color" style="padding-right:22px">所在位置</span>
+                                <input type="text" class="form-control" style="width:278%;">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm arrow">
+                                <span class="input-group-addon change_color">管理单位</span>
+                                <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown" style="width:122%">
+                                    <!--<option class="dropdown-menu menu" role="menu">-->
+                                    <option><a href="#">Action</a></option>
+                                    <option><a href="#">Another action</a></option>
+                                    <option><a href="#">Something else here</a></option>
+                                    <option><a href="#">Separated link</a></option>
+                                    <!--</option>-->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在河流</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">建站年月</span>
+                                <input type="text" class="form-control" style="width:115px">
+                                <a href="#" class="icon">
+                                    <img src="image/rygl/alert_err.png" width=25px height=25px alt=""/>
+                                    <img src="image/rygl/alert_menu.png" width=25px height=25px alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所属项目</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">建设类型</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal_right" style="padding-right:40px">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">建站名称</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">纬度</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">运行状态</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在省</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在县</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top:63px">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在县</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在县</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在县</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在县</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">所在县</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-body" id="look_info_box" style="display:none;padding-left:30px;">
+                <div class="modal_left look_info_left">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">姓名</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">联系电话</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group ">
+                                <span class="input-group-addon change_color">身份证号</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group arrow arrow_sp">
+                                <span class="input-group-addon change_color">性别</span>
+                                <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown" style="width:175px">
+                                    <option><a href="#">男</a></option>
+                                    <option><a href="#">女</a></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">出生日期</span>
+                                <input type="text" class="form-control" style="width:114px;">
+                                <a href="#" class="icon">
+                                    <img src="image/rygl/alert_err.png" width=25px height=25px alt=""/>
+                                    <img src="image/rygl/alert_menu.png" width=25px height=25px alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color">家庭住址</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal_right">
+                    <div class="placehold">照&nbsp&nbsp片</div>
+                </div>
+            </div>
+
+            <div class="modal-footer change_footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭 </button>
+                <button type="button" class="btn btn-primary"> 保存 </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--点击编辑显示工单详情页-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog model_main">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>工单-工单详情</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;</button>
+            </div>
+            <div class="model_left_gd" >
+                <div class="gd_wrap">
+                    <h2>工单详情</h2>
+                </div>
+                <div class="gd_content">
+                    <p>
+                        <span>工单编号 : </span>
+                        <span class="gd_info">A0000001</span>
+                    </p>
+                    <p>
+                        <span>工单时间 : </span>
+                        <span class="gd_info">2016-06-23 16:00</span>
+                    </p>
+                    <p>
+                        <span>工单主题 : </span>
+                        <span class="gd_info">服务器故障</span>
+                    </p>
+                    <p>
+                        <span>预判故障类型 : </span>
+                        <span class="gd_info">工况告警</span>
+                    </p>
+                    <p>
+                        <span>实际故障类型 : </span>
+                        <span class="gd_info">工况告警</span>
+                    </p>
+                    <p>
+                        <span>所属测站 : </span>
+                        <span class="gd_info">哈尔滨水文局</span>
+                    </p>
+                    <p>
+                        <span>工单分类 : </span>
+                        <span class="gd_info">电池</span>
+                    </p>
+                    <p>
+                        <span>优先级 : </span>
+                        <span class="gd_info">中级</span>
+                    </p>
+                    <p>
+                        <span>派单方式 : </span>
+                        <span class="gd_info">人工</span>
+                    </p>
+                    <p>
+                        <span>工单状态 : </span>
+                        <span class="gd_info">已完成</span>
+                    </p>
+                    <p>
+                        <span>响应状态 : </span>
+                        <span class="gd_info">按时完成</span>
+                    </p>
+                    <p>
+                        <span>修复状态 : </span>
+                        <span class="gd_info">按时修复</span>
+                    </p>
+                    <p>
+                        <span>评价信息/挂起原因 : </span>
+                        <span class="gd_info"></span>
+                    </p>
+                    <p>
+                        <span>审核意见 : </span>
+                        <span class="gd_info"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="model_right_gd">
+                <div class="model_title model_detail">
+                    <div class="base_info" id="work_detail">工单详细</div>
+                    <div class="look_info" id="maintain_detail">维修单详细</div>
+                </div>
+                <!-- 工单详细页面-->
+                <div class="model_right_content model_right_content_work" id="work_detail_content">
+                    <div class="work_detail_pub current">
+                        <span> <i></i> </span>
+                        <div class="detail-right">
+                            <p class="right">审核通过，工单完成，故障按时修复 ( <a href="#">查看评价信息</a> )</p>
+                            <p>2016-06-23 20:45:30</p>
+                        </div>
+                        <div class="top"></div>
+                        <div class="left"></div>
+                        <div class="right"></div>
+                        <div class="bottom"></div>
+                    </div>
+                    <div class="work_detail_pub">
+                        <span> <i></i> </span>
+                        <div class="detail-right">
+                            <p>故障维修完成，呆运维经理（徐亮）审核 ( <a href="#">查看评价信息</a> )</p>
+                            <p>2016-06-23 20:45:30</p>
+                        </div>
+                    </div>
+                    <div class="work_detail_pub">
+                        <span> <i></i> </span>
+                        <div class="detail-right">
+                            <p>维修人员（王武）已接单，故障维修中 ( <a href="#">查看评价信息</a> )</p>
+                            <p>2016-06-23 20:45:30</p>
+                        </div>
+                    </div>
+                    <div class="work_detail_pub">
+                        <span> <i></i> </span>
+                        <div class="detail-right">
+                            <p>审核通过，工单完成，故障按时修复 ( <a href="#">查看评价信息</a> )</p>
+                            <p>2016-06-23 20:45:30</p>
+                        </div>
+                    </div>
+                    <div class="work_detail_pub">
+                        <span> <i></i> </span>
+                        <div class="detail-right">
+                            <p>审核通过，工单完成，故障按时修复 ( <a href="#">查看评价信息</a> )</p>
+                            <p>2016-06-23 20:45:30</p>
+                        </div>
+                    </div>
+                    <div class="work_detail_pub">
+                        <span> <i></i> </span>
+                        <div class="detail-right">
+                            <p>审核通过，工单完成，故障按时修复 ( <a href="#">查看评价信息</a> )</p>
+                            <p>2016-06-23 20:45:30</p>
+                        </div>
+                    </div>
+                    <div class="work_detail_pub">
+                        <span> <i></i> </span>
+                        <div class="detail-right">
+                            <p>审核通过，工单完成，故障按时修复 ( <a href="#">查看评价信息</a> )</p>
+                            <p>2016-06-23 20:45:30</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 维修单详细页面-->
+                <div class="model_right_content" style="display: none" id="maintain_detail_content">
+                    <div class="top_num" style="overflow: hidden">
+                        <div class="num_left">
+                            <h3>维修单编号 : 000001</h3>
+                            <div class="left_pub">
+                                <p>设备名称 : <span>翻斗式雨量计</span></p>
+                                <p>维修方法 : <span>清洗雨量计</span></p>
+                            </div>
+                            <div class="left_pub">
+                                <p>设备名称 : <span>翻斗式雨量计</span></p>
+                                <p>维修方法 : <span>清洗雨量计</span></p>
+                            </div>
+                        </div>
+                        <div class="num_mid">
+                            照片
+                        </div>
+                        <div class="num_right">
+                            <span class="num_right_name">王武</span>
+                            <span class="num_right_tel">13698765321</span>
+                        </div>
+                    </div>
+                    <div class="bum_que">
+                        <div class="bum_que_title">维修问题</div>
+                        <div class="bum_que_pub">
+                            <div>设备名称 : <span>翻斗式雨量计</span></div>
+                            <div>维修前信息 : <span>杂物太多，需清理雨量计</span></div>
+                            <div>问题描述 : <span>雨量计被杂物覆盖</span></div>
+                            <div>维修后信息 : <span>雨量计正常工作</span></div>
+                        </div>
+                        <div class="bum_que_pub">
+                            <div>设备名称 : <span>翻斗式雨量计</span></div>
+                            <div>维修前信息 : <span>杂物太多，需清理雨量计</span></div>
+                            <div>问题描述 : <span>雨量计被杂物覆盖</span></div>
+                            <div>维修后信息 : <span>雨量计正常工作</span></div>
+                        </div>
+                        <div class="bum_que_pub">
+                            <div>设备名称 : <span>翻斗式雨量计</span></div>
+                            <div>维修前信息 : <span>杂物太多，需清理雨量计</span></div>
+                            <div>问题描述 : <span>雨量计被杂物覆盖</span></div>
+                            <div>维修后信息 : <span>雨量计正常工作</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--点击删除显示批量挂起页面-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog model_main" style="width:1158px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>批量挂起</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;</button>
+            </div>
+            <div class="up_content">
+                <div class="up_content_top">
+                    <ul>
+                        <li>工单概况</li>
+                        <li>预判故障类型</li>
+                        <li class="up_top_bg">工单状态</li>
+                        <li>响应/修复</li>
+                        <li>操作人</li>
+                        <li>挂起原因</li>
+                    </ul>
+                </div>
+                <div class="up_content_middle">
+                    <div class="up_content_top up_pub">
+                        <ul>
+                            <li>
+                                <p class="up_time">2016-06-23 13:57</p>
+                                <p class="up_num">A0000001</p>
+                                <p class="up_name">服务器故障</p>
+                            </li>
+                            <li>
+                                <p>工况告警</p>
+                            </li>
+                            <li>待派单</li>
+                            <li>
+                                <div class="press">
+                                    <p>响应3天</p>
+                                    <div class="press_bom">
+                                        <div>
+                                            <div class="bom_color"></div>
+                                        </div>
+                                        <div class="press_info">剩余1天3时53分</div>
+                                    </div>
+                                </div>
+                                <div class="press">
+                                    <p>修复10天</p>
+                                    <div class="press_bom">
+                                        <div>
+                                            <div class="bom_color"></div>
+                                        </div>
+                                        <div class="press_info">剩余1天3时53分</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>徐亮</li>
+                            <li>
+                                暂时不能进行维修，需要挂起
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="up_content_top up_pub">
+                        <ul>
+                            <li  style="margin-left:-235px">
+                                <p class="up_time">2016-06-21 13:57</p>
+                                <p class="up_num">A0000002</p>
+                                <p class="up_name">**县80%测站水位均偏大</p>
+                            </li>
+                            <li>
+                                <p>工况告警</p>
+                            </li>
+                            <li>待派单</li>
+                            <li>
+                                <div class="press">
+                                    <p>响应3天</p>
+                                    <div class="press_bom">
+                                        <div>
+                                            <div class="bom_color"></div>
+                                        </div>
+                                        <div class="press_info">剩余1天3时53分</div>
+                                    </div>
+                                </div>
+                                <div class="press">
+                                    <p>修复10天</p>
+                                    <div class="press_bom">
+                                        <div>
+                                            <div class="bom_color" style="background-color:#e6bd00"></div>
+                                        </div>
+                                        <div class="press_info" style="color:#AC6A00">剩余1天3时53分</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>徐亮</li>
+                            <li>
+                                暂时不能进行维修，需要挂起
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="up_content_top up_pub">
+                        <ul>
+                            <li  style="margin-left:-233px">
+                                <p class="up_time">2016-06-23 13:57</p>
+                                <p class="up_num">A0000001</p>
+                                <p class="up_name">服务器故障</p>
+                            </li>
+                            <li class='up_change_bg'>
+                                <p>通讯告警</p>
+                            </li>
+                            <li>待派单</li>
+                            <li>
+                                <div class="press">
+                                    <p>响应3天</p>
+                                    <div class="press_bom">
+                                        <div>
+                                            <div class="bom_color" style="background-color:#e60012"></div>
+                                        </div>
+                                        <div class="press_info" style="color:#e60012">剩余1天3时53分</div>
+                                    </div>
+                                </div>
+                                <div class="press">
+                                    <p>修复10天</p>
+                                    <div class="press_bom">
+                                        <div>
+                                            <div class="bom_color" style="background-color:#e6bd00"></div>
+                                        </div>
+                                        <div class="press_info" style="color:#AC6A00">剩余1天3时53分</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>徐亮</li>
+                            <li>
+                                暂时不能进行维修，需要挂起
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="up_content_top up_pub">
+                        <ul>
+                            <li  style="margin-left:-235px">
+                                <p class="up_time">2016-06-23 13:57</p>
+                                <p class="up_num">A0000001</p>
+                                <p class="up_name">服务器故障</p>
+                            </li>
+                            <li class="chq_bg">
+                                <p>传感器告警</p>
+                            </li>
+                            <li>待派单</li>
+                            <li>
+                                <div class="press" style="padding: 10px;">
+                                    响应超时（2016-06-17 15:30）
+                                    <!--<p>响应3天</p>-->
+                                    <!--<div class="press_bom">-->
+                                    <!--<div>-->
+                                    <!--<div class="bom_color"></div>-->
+                                    <!--</div>-->
+                                    <!--<div class="press_info">剩余1天3时53分</div>-->
+                                    <!--</div>-->
+                                </div>
+                                <div class="press">
+                                    <p>修复10天</p>
+                                    <div class="press_bom">
+                                        <div>
+                                            <div class="bom_color" style="background-color:#e6bd00"></div>
+                                        </div>
+                                        <div class="press_info" style="color:#AC6A00">剩余1天3时53分</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>徐亮</li>
+                            <li>
+                                暂时不能进行维修，需要挂起
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="up_content_top up_content_buttom">
+                    合计：共4条
+                </div>
+            </div>
+            <div class="modal-footer up_change_footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭 </button>
+                <button type="button" class="btn btn-primary"> 保存 </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--点击添加显示添加角色页面-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog model_main" style="width:700px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>添加 - 角色</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;</button>
+            </div>
+            <div class="add_content">
+                <div class="add_left">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color add_change_width">角色名称</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group arrow add_obj">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon change_color add_change_width">角色类型</span>
+                                <select type="text" class="form-control dropdown-toggle change_height add_obj" data-toggle="dropdown" style="width:122%">
+                                    <option><a href="#">Action</a></option>
+                                    <option><a href="#">Another action</a></option>
+                                    <option><a href="#">Something else here</a></option>
+                                    <option><a href="#">Separated link</a></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group add_change_height">
+                                <span class="input-group-addon change_color add_change_width">角色描述</span>
+                                <input type="text" class="form-control add_change_height">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="add_right">
+                    <div class="jstree" style="border-right:none">
+                        <div class="jstreeDemo" style="width:200px;">
+                            <div id="jstree_demo_div1" style="width:200px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer up_change_footer add_footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭 </button>
+                <button type="button" class="btn btn-primary"> 保存 </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="lib/jquery.min.js"></script>
+
+<script src="lib/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="lib/ie10-viewport-bug-workaround.js"></script>
+<script src="lib/jstree.js"></script>
+<script src="js/tree.js"></script>
+<script src="js/rygl.js"></script>

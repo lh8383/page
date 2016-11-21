@@ -1,0 +1,319 @@
+<meta charset="utf-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/rygl.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/tree.css" rel="stylesheet">
+<link rel="stylesheet" href="css/handle.css"/>
+
+<div style="height:53px;"></div>
+<div class="main_event">
+    <div class="panel panel-default">
+        <div class="panel-heading event_tit" id="icon">
+            <h4 class="panel-title main_event_title">
+                <div>事件经理监控中心</div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <img src="image/rygl/left_arr-3.fw.png" id="icon_event"  class="icon_event"/>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body event_body">
+                <div class="main_event_data" style="overflow: hidden">
+                    <div class="main_data_tit">数据筛选</div>
+                    <div class="main_data_con">
+                        <div class="input-group arrow arrow_sp">
+                            <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown">
+                                <option><a href="#">运维区域</a></option>
+                                <option><a href="#">1231</a></option>
+                            </select>
+                        </div>
+                        <div class="input-group arrow arrow_sp">
+                            <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown">
+                                <option><a href="#">水质站 水文站</a></option>
+                                <option><a href="#">1231</a></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_event_break" style="overflow: hidden">
+                    <div class="main_data_tit main_break_tit">实时故障监控</div>
+                    <p>运维站点共700个，故障站点共 <span style="color:red">90</span>个</p>
+                    <div class="img_list">
+                        <img src="image/rygl/sjz.png" alt=""/>
+                    </div>
+                    <div class="img_list">
+                        <img src="image/rygl/ts.png" alt=""/>
+                    </div>
+                    <div class="img_list">
+                        <img src="image/rygl/qhd.png" alt=""/>
+                    </div>
+                </div>
+                <div class="main_event_cont">
+                    <div class="main_data_tit main_cont_tit">近24小时故障站点总数</div>
+                    <div class="main_cont_img">
+                        <img src="image/rygl/info.png" alt=""/>
+                    </div>
+                </div>
+                <div class="main_event_plan">
+                    <div class="main_data_tit main_plan_tit">巡检计划追踪</div>
+                    <div class="main_plan_con">
+                        <div class="main_plan_left">
+                            <p>开始 : 2016-02-01</p>
+                            <p>结束 : 2016-05-01</p>
+                        </div>
+                        <div class="main_plan_right">
+                            <img src="image/rygl/xjjh.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main_control">
+    <div class="main_control_title">站点运行监控</div>
+    <div class="main_control_con">
+        <div class="top">
+            <ul id="top_ul">
+                <li>
+                    <img src="image/rygl/add-3.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/rygl/jian-18.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/rygl/shou-20.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/rygl/icon-21.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/rygl/icon_23.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/rygl/icon-25.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/rygl/icon.png" alt=""/>
+                </li>
+                <li>
+                    <img src="image/rygl/search.png" alt=""/>
+                </li>
+            </ul>
+        </div>
+        <div class="map">
+            <img src="image/rygl/map-2.png" alt=""/>
+            <div class="panel panel-default handle">
+                <div class="panel-heading">
+                    <h4 class="panel-title handle_tit">
+                        <div>
+                            <input type="checkbox"/>
+                            <span>监视测站类型</span>
+                        </div>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            <img src='image/rygl/down-3.png' class="icon" id="handle_down">
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse in">
+                    <div class="panel-body handle_body">
+                        <div class="handle_content handle_content_bg" style="overflow: hidden">
+                            <div>
+                                <input type="checkbox"/>
+                                <span>水文站</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"/>
+                                <span>雨量站</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"/>
+                                <span>水位站</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"/>
+                                <span>取用水站</span>
+                            </div>
+                            <div style="margin-right: 16px">
+                                <input type="checkbox"/>
+                                <span>地下水站</span>
+                            </div>
+                            <div>
+                                <input type="checkbox"/>
+                                <span>水质站</span>
+                            </div>
+                        </div>
+                        <div class="handle_pub">
+                            <div class="handle_tit">
+                                <div>
+                                    <input type="checkbox"/>
+                                    <span>测站运行状态</span>
+                                </div>
+                                <div class="handle_content handle_sup">
+                                    <div>
+                                        <input type="checkbox"/>
+                                        <span>正常</span>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"/>
+                                        <span>工况故障</span>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"/>
+                                        <span>水位站</span>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox"/>
+                                        <span>取用水站</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_req">
+    <div class="panel panel-default" style="border: none">
+        <div class="panel-heading main_req_tit">
+            <h4 class="panel-title">
+                <div class="main_control_title main_req_tit">实时请求监控</div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    <img src='image/rygl/right_arr.png' id="main_req_fade">
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse in main_req_body">
+            <div class="panel-body">
+                <div class="main_req_pub">
+                    <div class="main_req_con">
+                        <div>待处理 : <span>20</span> </div>
+                        <div>处理中 : <span>20</span> </div>
+                        <div>待反馈 : <span>20</span> </div>
+                    </div>
+                </div>
+                <div class="main_req_pub">
+                    <div class="main_control_title">实时事件监控</div>
+                    <div class="main_req_con">
+                        <div>待处理 : <span>20</span> </div>
+                        <div>处理中 : <span>20</span> </div>
+                        <div>待反馈 : <span>20</span> </div>
+                    </div>
+                </div>
+                <div class="main_req_pub" style="overflow: hidden">
+                    <div class="main_control_title main_req_tit">实时工单监控</div>
+                    <div class="main_req_con">
+                        <div>待派单 : <span>20</span> </div>
+                        <div>处接单 : <span>20</span> </div>
+                        <div>维修退回 : <span>20</span> </div>
+                        <div>维修中 : <span>10</span> </div>
+                        <div>待系统确认 : <span>10</span> </div>
+                        <div>无法维修 : <span>5</span> </div>
+                        <div>待审核 : <span>5</span> </div>
+                        <div>审核退回 : <span>5</span> </div>
+                    </div>
+                </div>
+                <div class="main_req_pub">
+                    <div class="main_control_title">工单超时状态</div>
+                    <div class="main_req_con">
+                        <div>超时未响应 : <span>20</span> </div>
+                        <div>超时未修复 : <span>20</span> </div>
+                    </div>
+                </div>
+                <div class="main_req_pub">
+                    <div class="main_control_title">维修人员实时跟踪</div>
+                    <div class="main_req_con main_req_sup">
+                        <div class="main_req_con_title">
+                            <div></div>
+                            <div>待接单</div>
+                            <div>维修中</div>
+                            <div>审核原因</div>
+                        </div>
+                        <div class="main_req_jstree_pub">
+                            <table>
+                                <tr class="main_req_jstree">
+                                    <th class="showjstree">哈尔滨水文局</th>
+                                    <th>12</th>
+                                    <th>10</th>
+                                    <th>12</th>
+                                </tr>
+                                <tr class="main_req_jstree main_req_jstree_dis">
+                                    <td class="td">哈尔滨</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main_req_jstree_pub">
+                            <table>
+                                <tr class="main_req_jstree">
+                                    <th class="showjstree">哈尔滨水文局</th>
+                                    <th>12</th>
+                                    <th>10</th>
+                                    <th>12</th>
+                                </tr>
+                                <tr class="main_req_jstree main_req_jstree_dis" style="display:none">
+                                    <td class="td">哈尔滨</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main_req_jstree_pub">
+                            <table>
+                                <tr class="main_req_jstree">
+                                    <th class="showjstree">哈尔滨水文局</th>
+                                    <th>12</th>
+                                    <th>10</th>
+                                    <th>12</th>
+                                </tr>
+                                <tr class="main_req_jstree main_req_jstree_dis" style="display:none">
+                                    <td class="td">哈尔滨</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="main_req_jstree_pub">
+                            <table>
+                                <tr class="main_req_jstree">
+                                    <th class="showjstree">哈尔滨水文局</th>
+                                    <th>12</th>
+                                    <th>10</th>
+                                    <th>12</th>
+                                </tr>
+                                <tr class="main_req_jstree main_req_jstree_dis" style="display:none">
+                                    <td class="td">哈尔滨</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/jstree.js"></script>
+<script src="js/tree.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="lib/holder.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="lib/ie10-viewport-bug-workaround.js"></script>
+<!--<script src="js/rygl.js"></script>-->
+<script src="js/handle.js"></script>

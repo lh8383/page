@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/handle.css"/>
+</head>
+<body>
+<div class="main_event">
+    <div class="panel panel-default">
+        <div class="panel-heading main_event_title" id="icon">
+            <h4 class="panel-title">
+                <div>事件经理监控中心</div>
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    <img src="image/rygl/left_arr-3.fw.png" alt="" id="icon_event"  class="icon_event"/>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body event_body">
+                <div class="main_event_data">
+                    <div class="main_data_tit">数据筛选</div>
+                    <div class="main_data_con">
+                        <div class="input-group arrow arrow_sp">
+                            <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown">
+                                <option><a href="#">运维区域</a></option>
+                                <option><a href="#">1231</a></option>
+                            </select>
+                        </div>
+                        <div class="input-group arrow arrow_sp">
+                            <select type="text" class="form-control dropdown-toggle change_height" data-toggle="dropdown">
+                                <option><a href="#">水质站 水文站</a></option>
+                                <option><a href="#">1231</a></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_event_break" style="overflow: hidden">
+                    <div class="main_data_tit main_break_tit">实时故障监控</div>
+                    <p>运维站点共700个，故障站点共 <span style="color:red">90</span>个</p>
+                    <div class="img_list">
+                        <img src="image/rygl/sjz.png" alt=""/>
+                    </div>
+                    <div class="img_list">
+                        <img src="image/rygl/ts.png" alt=""/>
+                    </div>
+                    <div class="img_list">
+                        <img src="image/rygl/qhd.png" alt=""/>
+                    </div>
+                </div>
+                <div class="main_event_cont">
+                    <div class="main_data_tit main_cont_tit">近24小时故障站点总数</div>
+                    <div class="main_cont_img">
+                        <img src="image/rygl/info.png" alt=""/>
+                    </div>
+                </div>
+                <div class="main_event_plan">
+                    <div class="main_data_tit main_plan_tit">巡检计划追踪</div>
+                    <div class="main_plan_con">
+                        <div class="main_plan_left">
+                            <p>开始 : 2016-02-01</p>
+                            <p>结束 : 2016-05-01</p>
+                        </div>
+                        <div class="main_plan_right">
+                            <img src="image/rygl/xjjh.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="js/handle.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mainfid{
+    width: 100%;
+}
+.maintab{
+    width: 100%;
+    top: 50%;
+    background: #189dfc;
+    height:378px;
+}
+.login_top{
+    width:1366px;
+    height:60px;
+    margin-left:100px;
+}
+.login_top img{
+    margin-top:12px;
+}
+.login_center{
+    width:1366px;
+    height:472px;
+    background:url(../image/login/banenr.jpg) no-repeat;
+    margin:0 auto;
+    border-top:1px solid #189dfc;
+    z-index:999;
+    position:relative;
+}
+.login_center .login_mk{
+    width: 253px;
+    height: 267px;
+    margin-left: 876px;
+    margin-top: 146px;
+}
+.login_mk table{
+    margin-bottom:-25px;
+}
+.login_mk .intbab{
+    width: 212px;
+    height: 34px;
+    border: 1px solid #6594fd;
+    border-radius: 5px;
+    background: url(../image/login/user.jpg) no-repeat 11px 7px;
+    color: #acacb0;
+    font-family:"微软雅黑";
+    padding-left: 36px;
+}
+.login_mk .pasword{
+    width: 212px;
+    height: 34px;
+    border: 1px solid #6594fd;
+    border-radius: 5px;
+    font-family:"微软雅黑";
+    background: url(../image/login/user.jpg) no-repeat 11px 7px;
+    color: #acacb0;
+    padding-left: 36px;
+    margin-top:20px;
+}
+.login_mk .yzm{width: 99px;
+    height: 34px;
+    border: 1px solid #6594fd;
+    border-radius: 5px;
+    color: #acacb0;
+    padding-left: 17px;
+    margin-top:20px;
+}
+.wa{width: 99px;
+    height: 34px;
+    border: 1px solid #6594fd;
+    border-radius: 5px;
+    color: #acacb0;
+    padding-left: 17px;
+    margin-top:20px;
+    font-family:"微软雅黑";
+}
+.wa img{
+    margin-top:3px;
+}
+.delu{
+    height:35px;
+    border:1px solid red;
+    background:#fba500;
+    border-radius:5px;
+    margin-top:20px;
+    text-align:center;
+    font-size:16px;
+    color:#fff;
+    line-height:35px;
+}
+.wjma{
+    display:block;
+    text-align:center;
+    padding-top:5px;
+}
+.fidbg{
+    width:auto;
+    height:134px;
+}
+.cloud{
+    position: absolute;
+    width: 221px;
+    height: 134px;
+    top: 143px;
+    left:62px;
+    /*transform: rotate(0deg);*/
+    /*transition: all 2s linear;*/
+    /*animation: scale 3s linear;*/
+}
+/*.cloud:hover{*/
+    /*transform: rotate(360deg);*/
+/*}*/
+

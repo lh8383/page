@@ -1,0 +1,105 @@
+/*“≥√Ê≥ı ºªØ*/
+html,body{
+   min-height: 900px;
+    min-width: 900px;
+}
+.outer_box{
+    width: 1032px;
+    margin: 0 auto;
+    height: 625px;
+    background: url(../image/login2/login1.png) no-repeat;
+    margin-top: 150px;
+    position: relative;
+}
+.inner_box{
+    width: 49%;
+    height: 166px;
+    background-color: #e4f3f8;
+    position: absolute;
+    top: 261px;
+    left: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #e4e4e4 ;
+}
+.inner_box form{
+    float: left;
+}
+.inner_box form .pub{
+    margin: 15px 0 15px 50px;
+    position: relative;
+}
+.inner_box form .pub input{
+    width: 200px;
+    height: 20px;
+}
+.pub::after{
+    content: '';
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    right:10px;
+}
+.pub:nth-child(1)::after{
+    background: url(../image/login2/login_user.png) no-repeat;
+}
+.pub:nth-child(2)::after{
+    background: url(../image/login2/login_c.png) no-repeat;
+}
+.pub:nth-child(3)::after{
+    background: url(../image/login2/login_self.png) no-repeat;
+    top: 5px;
+    left:120px;
+}
+.inner_box form .pub label{
+    color: #0068b7;
+}
+.num{
+    float: left;
+}
+.inner_box form .num input{
+    width: 80px;
+}
+.number{
+    float: left;
+    margin-left: 45px;
+    margin-top: -5px;
+}
+.login{
+    float: left;
+    position:relative;
+}
+.login button{
+    width: 80px;
+    height: 35px;
+    background-color: #56b8ff;
+    outline-style: none;
+    border: none;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.login .small_box{
+    width:93px;
+    position: absolute;
+    top: 100px;
+    left: 55px;
+}
+.login .small_box span{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../image/login2/login_checked.png);
+    /*background-size: 10px 10px;*/
+    vertical-align: middle;
+}
+.outer_box p{
+    position: absolute;
+    bottom: 157px;
+    left: 50%;
+    margin-left: -94px;
+}
+

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	border: none;
+	min-height:900px;
+}
+body {
+	font-family: "微软雅黑";
+	color: #333;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+div,p,h1,h2,h3,h5,p{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover{
+	color: #333;
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+input{
+	outline-style: none;
+}
+/*input,select{*/
+	/*-webkit-appearance:none;*/
+	/*appearance:none;*/
+/*}*/
+/*/!*禁用下拉列表的下拉阿牛*!/*/
+/*select::-ms-expand {*/
+	/*display: none;*/
+/*}*/

@@ -1,0 +1,123 @@
+body {
+    width: 100%;
+
+}
+.server_left {
+    width: 20%;
+    height: 100%;
+    border: 1px solid #1cc2fa;
+    float: left;
+}
+.server_left_pub {
+    overflow: hidden;
+}
+.server_title {
+    height: 4%;
+    /*line-height: 32px;*/
+    text-align: center;
+    color: #fff;
+    background-color: #1cc2fa;
+    font-size: 18px;
+    padding-top: 1%
+}
+.server_find h4 {
+    height:4%;
+    padding-top: 2%;
+    background-color: #EAF6F6;
+    color: #00A0E9;
+    padding-left:7%;
+    margin-top: 1%;
+    font-size: 16px;
+}
+
+.server_find_pub {
+    width: 24%;
+    height: 8%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #76CBFF;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-top: 10%;
+    float: left;
+}
+.server_find_pub::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../image/rygl/search.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+.server_option .server_form {
+    padding: 5% 0 0px 5%;
+    width: 100%;
+}
+
+.server_option .form-group {
+    margin-bottom: 5%;
+}
+
+.icon {
+    margin-left: 5px;
+}
+
+.server_option .icon img {
+    margin-left: 0%;
+}
+.server_option .btn {
+    width: 82px;
+    height: 32px;
+    display: block;
+    margin: 4% 5% 5% 0;
+    border: 1px solid #76CBFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    float: right;
+}
+.server_req{
+    width: 100%;
+    height: 80%;
+}
+.server_req ul {
+    width: 100%;
+    padding: 0% 8% 0 8%
+}
+
+.server_req ul li {
+    width: 100%;
+    height: 6%;
+    border-bottom: 1px solid #E3E3E3;
+    padding-left: 10%;
+    padding-top: 5%
+}
+
+.server_req_num {
+    padding-left: 12%;
+    color: #1cc2fa;
+}
+
+.server_right {
+    overflow: hidden;
+    padding: 25px 0 0 20px;
+}
+
+.table td {
+    padding-top: 10px;
+    text-align: center;
+    height: 50px;
+    color: #7D7D7D;
+}
+.server_right_info{
+    float: right;
+    color: #26a7eb;
+    padding-right: 20px;
+}
